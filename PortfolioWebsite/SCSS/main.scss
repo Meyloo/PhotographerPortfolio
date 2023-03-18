@@ -1,0 +1,225 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+body {
+    font-family: "Dosis";
+    font-weight: 200;
+}
+header {
+    background: $bg-image center center/cover ;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+.logo {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 5rem;
+    padding: 30px 50px;
+    
+}
+header {
+    color: white;
+}
+
+header .nav {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 45px 40px;
+        li a {
+            padding-top: 30px;
+            padding-bottom: 5px;
+            margin: 0px 30px;
+            color: white;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            transition: border-color 2s;
+        }
+            a:hover {
+                
+                border-color: gray;
+                
+            
+
+        }
+            .current {
+                border-bottom: 2px solid;
+                border-color: yellow;
+            }
+        
+    
+    } 
+} 
+
+header .header-content {
+    text-align: center;
+    padding-top: 200px;
+    
+
+    h1 {
+        padding-bottom: 15px;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    p {
+        padding-bottom: 40px;
+        font-size: 1.2rem;
+        font-weight: 350;
+    }
+
+    a {
+        display: inline-block;
+         padding: 15px 25px;
+         background-color: white;
+         transition: background-color 0.5s;
+    }
+
+    a:hover {
+        background-color: yellow;
+    }
+}
+
+
+
+main {
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .section-content {
+        text-align: center;
+        padding: 30px 30px 0px 30px;
+
+        
+            h1 {
+                padding: 20px;
+                font-weight: 500;
+                font-size: 2rem;
+            }
+
+            .bottom-line {
+                width: 50px;
+                height: 2px;
+                background-color: yellow;
+                margin: auto;
+            }
+            p {
+                padding: 20px;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+        
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 50px;
+
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+             
+            p {
+                font-weight: 300;
+            }
+
+            
+            i {
+                color: yellow;
+            }
+        }
+    .icons {
+        padding-top: 40px;
+        height: 280px;
+        h2 {
+            line-height: 2;
+            font-weight: 300;
+            font-size: 1.8rem;
+            
+
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+    }
+
+        .light-background {
+            background-color: lightgrey;
+        }
+
+        .dark-background {
+            background-color: grey;
+        }
+    
+
+    }
+
+    .bigger-icons {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding: 0px 50px;
+
+        .bigger-icon {
+            width: 140px;
+            height: 140px;
+            background-color: #3f3f3f;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+            i {
+                color: white;
+            }
+        }
+            .step {
+                
+                right: 0;
+                top: 0;
+                position: absolute;
+                width: 47px;
+                height:47px;
+                border-radius: 50%;
+                background-color: yellow;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.5rem;
+                color: white;
+                padding: 12px 0px 0px 18px;
+            }
+
+            
+    }
+
+
+
+
+}
+
+
+
+
